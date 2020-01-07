@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_9"
+            android:src="@drawable/xuexizhidu_witer" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_9"
+            android:layout_weight="1"
+            android:background="@drawable/radiu_backgroud_witch"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_7">
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_13"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:src="@drawable/sousuo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="搜索时政新闻、文章、资讯"
+                android:textColor="@color/witer"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/two_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_51"
+        app:tabIndicatorColor="#fffe441d"
+        app:tabMode="scrollable"
+        android:background="#fffff2ef" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/two_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
